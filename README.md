@@ -98,12 +98,3 @@ cd <nombre_del_proyecto>
 npm install
 npm start
 ```
-
-## Enlace al Repositorio
-
-Enlace al repositorio en GitHub: [Enlace al Repositorio](<URL_DEL_REPOSITORIO>)
-
-## Autor
-
-- Nombre: [Tu Nombre]
-- Email: [Tu Email]
