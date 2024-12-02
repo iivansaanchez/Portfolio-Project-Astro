@@ -1,0 +1,16 @@
+---
+import Welcome from '../components/Welcome.astro';
+import Layout from '../layouts/Layout.astro';
+import AboutMe from '../components/AboutMe.astro'
+
+const aboutMe = {
+  title: 'Welcome to My Portfolio',
+  description: 'I am Iván Sánchez, a web developer with a passion for creating amazing websites.',
+  imageSrc: '/img/Fondo.png', // Ruta de la imagen de fondo
+  userImage: '/img/Perfil.webp',  
+};
+---
+
+<Layout>
+  <AboutMe title={aboutMe.title} description={aboutMe.description} imageSrc={aboutMe.imageSrc} userImage={aboutMe.userImage} />
+</Layout>

@@ -1,0 +1,36 @@
+---
+// AboutMe.astro
+import Navbar from '../components/Navbar.astro'; // Asegúrate de que la ruta sea correcta
+const { title, description, imageSrc, userImage } = Astro.props;
+---
+
+<section class="relative w-full h-screen bg-cover bg-center" style={`background-image: url(${imageSrc})`}>
+  <!-- Inserta el Navbar aquí -->
+  <Navbar />
+
+  <!-- Fondo con filtro de desenfoque -->
+  <div class="absolute inset-0 opacity-50 backdrop-blur-[1px]"></div>
+
+  <div class="container mx-auto h-full flex items-center justify-between px-6">
+    <div class="w-1/2 text-white">
+      <h1 class="text-4xl font-bold mb-4">
+        {title.split(" ").map(word => 
+          word === "Iván" ? <span style="color: #CA00E5">{word}</span> : word
+        )}
+      </h1>
+      <p class="text-lg">
+        {description.split(" ").map(word => 
+          word === "web" ? <span style="color: #CA00E5">{word}</span> : word
+        )}
+      </p>
+    </div>
+
+    <div class="w-1/3 flex justify-center items-center">
+      <div class="relative group">
+        <div class="w-96 h-96 rounded-full overflow-hidden border-white shadow-lg transform transition-all duration-300 group-hover:scale-105 group-hover:translate-y-2">
+          <img src={userImage} alt="User Image" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
