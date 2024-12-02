@@ -1,0 +1,23 @@
+---
+// Skills.astro
+const { skills } = Astro.props; // skills debe ser un array de objetos que contengan el título y la imagen
+---
+
+<section class="relative min-h-screen bg-cover bg-center" style="background-image: url('/path/to/your-background.jpg');">
+  <!-- Fondo con filtro -->
+  <div class="absolute inset-0 bg-black opacity-50"></div>
+
+  <!-- Contenedor de los iconos de las habilidades -->
+  <div class="relative z-10 container mx-auto px-6 py-16">
+    <h2 class="text-4xl font-bold text-white text-center mb-12">My Skills</h2>
+
+    <!-- Grid de iconos -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+      {skills.map((skill) => (
+        <div class="flex justify-center items-center">
+          <img src={skill.image} alt={skill.name} class="w-20 h-20 object-contain" />
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

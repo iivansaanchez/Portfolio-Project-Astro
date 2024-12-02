@@ -1,0 +1,23 @@
+---
+// Experience.astro
+const { title, description, time, image } = Astro.props;
+---
+
+<div class="flex justify-center items-center min-h-screen">
+  <!-- Contenedor de la experiencia laboral -->
+  <div class="relative flex items-center w-full max-w-3xl px-6">
+    <!-- Barra lateral con línea -->
+    <div class="absolute left-0 w-1 bg-gradient-to-b from-purple-500 to-indigo-700 h-full"></div>
+
+    <!-- Circunferencia que simula el punto de la línea de trabajo -->
+    <div class="w-6 h-6 bg-purple-600 rounded-full absolute left-1/2 transform -translate-x-1/2 mt-2 border-4 border-white"></div>
+    
+    <!-- Información centrada -->
+    <div class="ml-10 flex flex-col space-y-4 w-full text-center">
+      <h2 class="text-2xl font-semibold text-gray-800">{title}</h2>
+      <p class="text-md text-gray-700">{description}</p>
+      <p class="text-sm text-gray-500 italic">{time}</p>
+    </div>
+  </div>
+</div>
+
