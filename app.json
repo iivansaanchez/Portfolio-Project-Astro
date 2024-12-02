@@ -1,0 +1,69 @@
+{
+    "name": "Iván Sánchez Sánchez",
+    "about": "A passionate web developer with skills in JavaScript, Node.js, and Astro. I am always looking to learn and improve my skills through hands-on projects.",
+    "studies": [
+      {
+        "degree": "HIGH SCHOOL (2019-2022)",
+        "university": "IES Jacarandá",
+        "description": "High school is a post-compulsory educational stage that prepares students for higher education, such as university or higher vocational training, and for their personal and professional development.",
+        "image": "/img/mañara.png"
+      },
+      {
+        "degree": "HIGHER DEGREE IN WEB APPLICATION DEVELOPMENT (2022-2024)",
+        "university": "Santa Joaquina de Vedruna (San Bernardo, Seville)",
+        "description": "The Higher Degree in Web Application Development is a vocational training program that prepares students to design, develop, and implement dynamic and functional web applications. Throughout the course, students acquire knowledge in programming languages such as HTML, CSS, JavaScript, etc.",
+        "image": "/img/vedruna.png"
+      }
+    ],
+    "skills": [
+      {
+        "name": "Angular",
+        "image": "/img/Angular.svg"
+      },
+      {
+        "name": "Bootstrap",
+        "image": "/img/Bootstrap.svg"
+      },
+      {
+        "name": "CSS3",
+        "image": "/img/Css.svg"
+      },
+      {
+        "name": "HTML5",
+        "image": "/img/html.svg"
+      },
+      {
+        "name": "JavaScript",
+        "image": "/img/JavaScript.svg"
+      },
+      {
+        "name": "MySQL",
+        "image": "/img/mysql.svg"
+      },
+      {
+        "name": "Node.js",
+        "image": "/img/NodeJs.svg"
+      },
+      {
+        "name": "React",
+        "image": "/img/React.svg"
+      },
+
+      {
+        "name": "Spring Boot",
+        "image": "/img/SpringBoot.svg"
+      },
+      {
+        "name": "TypeScript",
+        "image": "/img/TypeScript.svg"
+      }
+    ],
+    "experiences": [
+      {
+        "Chef": "Chef",
+        "name": "Pizzeria La Toscana, Brenes",
+        "description": "Pizza maker with experience in preparing and handling dough, shaping and adding ingredients to specifications. Responsible for precise control of time and temperature in the oven. Ability to work efficiently in dynamic environments and ensure food hygiene standards."
+      }
+    ]
+  }
+  
