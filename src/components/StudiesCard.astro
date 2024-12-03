@@ -1,23 +1,41 @@
 ---
-// Experience.astro
+// Studies.astro
 const { title, description, time, image } = Astro.props;
 ---
 
-<div class="flex justify-center items-center min-h-screen">
-  <!-- Contenedor de la experiencia laboral -->
-  <div class="relative flex items-center w-full max-w-3xl px-6">
-    <!-- Barra lateral con línea -->
-    <div class="absolute left-0 w-1 bg-gradient-to-b from-purple-500 to-indigo-700 h-full"></div>
-
-    <!-- Circunferencia que simula el punto de la línea de trabajo -->
-    <div class="w-6 h-6 bg-purple-600 rounded-full absolute left-1/2 transform -translate-x-1/2 mt-2 border-4 border-white"></div>
-    
-    <!-- Información centrada -->
-    <div class="ml-10 flex flex-col space-y-4 w-full text-center">
-      <h2 class="text-2xl font-semibold text-gray-800">{title}</h2>
-      <p class="text-md text-gray-700">{description}</p>
-      <p class="text-sm text-gray-500 italic">{time}</p>
+<div class="flex flex-col items-center min-h-screen bg-gray-50 px-6 py-12">
+  <!-- Título de la sección -->
+  <div class="flex items-center space-x-4 mb-8">
+    <div class="bg-purple-500 text-white w-12 h-12 flex justify-center items-center rounded-full shadow-lg">
+      <svg class="w-6 h-6" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 12l8-4-8-4-8 4 8 4zm0 6l8-4m-8 4v-6m0 6l-8-4m8 4l8-4m-8-4V6" />
+      </svg>
     </div>
+    <h1 class="text
+    <h1 class="text-4xl font-bold text-gray-800">Education</h1>
+  </div>
+  <!-- Lista de tarjetas de educación -->
+  <div class="w-full max-w-4xl space-y-8">
+    <!-- Card individual -->
+    <div class="flex flex-col md:flex-row items-center md:items-start relative group">
+      <!-- Imagen opcional -->
+      <div class="w-24 h-24 flex-shrink-0 rounded-full overflow-hidden border-4 border-purple-500 shadow-lg mb-4 md:mb-0 md:mr-6 transition-transform duration-300 group-hover:scale-105">
+        <img src={image} alt="Education Image" class="w-full h-full object-cover" />
+      </div>
+
+      <!-- Información de la tarjeta -->
+      <div class="flex flex-col space-y-2 w-full">
+        <h2 class="text-2xl font-semibold text-gray-800 transition-colors duration-300 group-hover:text-purple-500">
+          {title}
+        </h2>
+        <p class="text-gray-600 text-md leading-relaxed">
+          {description}
+        </p>
+        <p class="text-sm text-gray-500 italic">{time}</p>
+      </div>
+    </div>
+
+    <!-- Separador -->
+    <div class="w-full h-px bg-gradient-to-r from-purple-500 to-indigo-500"></div>
   </div>
 </div>
-

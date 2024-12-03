@@ -1,8 +1,7 @@
 ---
-// Navbar.astro
 const { logoSrc, userImgSrc } = Astro.props;
 ---
-<nav class="fixed top-0 left-0 w-full bg-transparent z-50">
+<nav class="fixed top-0 left-0 w-full bg-white bg-opacity-80 backdrop-blur-lg shadow-md z-50">
   <div class="container mx-auto flex justify-between items-center px-6 py-4">
     <!-- Logo a la izquierda -->
     <div class="text-4xl font-typewriter text-[#09008A]">
@@ -21,7 +20,7 @@ const { logoSrc, userImgSrc } = Astro.props;
       </li>
       <li>
         <a
-          href="#education"
+          href="#studies"
           class="hover:font-bold transition-all duration-300"
         >
           Education

@@ -6,13 +6,13 @@
         "degree": "HIGH SCHOOL (2019-2022)",
         "university": "IES Jacarandá",
         "description": "High school is a post-compulsory educational stage that prepares students for higher education, such as university or higher vocational training, and for their personal and professional development.",
-        "image": "/img/mañara.png"
+        "image": "/img/IESJacaranda.png"
       },
       {
         "degree": "HIGHER DEGREE IN WEB APPLICATION DEVELOPMENT (2022-2024)",
         "university": "Santa Joaquina de Vedruna (San Bernardo, Seville)",
         "description": "The Higher Degree in Web Application Development is a vocational training program that prepares students to design, develop, and implement dynamic and functional web applications. Throughout the course, students acquire knowledge in programming languages such as HTML, CSS, JavaScript, etc.",
-        "image": "/img/vedruna.png"
+        "image": "/img/IconVedruna.png"
       }
     ],
     "skills": [

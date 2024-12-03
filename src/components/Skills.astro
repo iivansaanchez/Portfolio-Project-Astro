@@ -3,13 +3,22 @@
 const { skills } = Astro.props; // skills debe ser un array de objetos que contengan el título y la imagen
 ---
 
-<section class="relative min-h-screen bg-cover bg-center" style="background-image: url('/path/to/your-background.jpg');">
+<section class="relative bg-cover bg-center" style="background-image: url('/img/FondoSkills.jpg');">
   <!-- Fondo con filtro -->
   <div class="absolute inset-0 bg-black opacity-50"></div>
 
   <!-- Contenedor de los iconos de las habilidades -->
   <div class="relative z-10 container mx-auto px-6 py-16">
-    <h2 class="text-4xl font-bold text-white text-center mb-12">My Skills</h2>
+    <!-- Título con ícono -->
+    <div class="flex items-center justify-center gap-4 mb-12">
+      <!-- Icono dentro de un círculo -->
+      <div class="bg-purple-500 text-white w-12 h-12 flex items-center justify-center rounded-full shadow-lg">
+        <svg class="w-6 h-6" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12l-4-4m0 8l4-4m0 0H4" />
+        </svg>
+      </div>
+      <h2 class="text-4xl font-bold text-white">My Skills</h2>
+    </div>
 
     <!-- Grid de iconos -->
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
